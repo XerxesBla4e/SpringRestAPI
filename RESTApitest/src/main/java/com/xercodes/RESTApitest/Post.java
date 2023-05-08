@@ -16,7 +16,20 @@ public class Post {
     @Id //automatically generate random unique ids for requests
     @GeneratedValue(strategy = GenerationType.AUTO)
     private final int id;
-    private final int userId;
-    private final String title;
-    private final String body;
+    private int userId;
+    private String title;
+    private String body;
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 }
